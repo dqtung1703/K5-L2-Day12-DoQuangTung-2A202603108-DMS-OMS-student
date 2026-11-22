@@ -1,0 +1,57 @@
+image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,hand,on_wheel,khác giá trị (IoU=0.75),unknown,no,ambiguous,4.7,Giữ unknown do không thấy rõ tay có chạm vô lăng hay không; trao đổi thêm với peer
+D01.png,face,eye_left,khác giá trị (IoU=0.54),open,unknown,ambiguous,4.5,Giữ open theo quan sát khe mắt; đối chiếu thêm với peer
+D01.png,face13,count,khác số skeleton,1,0,mine,4.6,Giữ nguyên face13; báo peer bổ sung vì mặt rộng >= 60 px
+D02.png,face,eye_left,khác giá trị (IoU=0.93),open,unknown,peer,"4.4-1, 4.5",Đã sửa eye_left sang unknown trong export_final_v2.zip
+D02.png,face,eye_right,khác giá trị (IoU=0.93),open,unknown,peer,"4.4-1, 4.5",Đã sửa eye_right sang unknown trong export_final_v2.zip
+D02.png,face13,left_eye_outer.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,left_eye_inner.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,left_eye_upper.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,left_eye_lower.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,right_eye_outer.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,right_eye_inner.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,right_eye_upper.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D02.png,face13,right_eye_lower.outside,khác cờ,0,1,peer,4.6,Đã cập nhật cờ điểm mắt không rõ sau kính trong export_final_v2.zip
+D03.png,person,seatbelt,khác giá trị (IoU=0.92),worn_correct,unknown,ambiguous,4.7,Giữ worn_correct theo dải dây chéo quan sát được; trao đổi thêm với peer
+D03.png,face,eye_left,khác giá trị (IoU=0.68),open,closed,ambiguous,4.5,Giữ open vì còn thấy khe mắt; trao đổi thêm với peer
+D03.png,face,eye_right,khác giá trị (IoU=0.68),open,closed,ambiguous,4.5,Giữ open vì còn thấy khe mắt; trao đổi thêm với peer
+D03.png,face,gaze_zone,khác giá trị (IoU=0.68),road,other,ambiguous,4.5,Giữ road theo hướng đầu và mắt; trao đổi thêm với peer
+D03.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.2, 4.7",Đã bổ sung box hand bị thiếu ở D03.png trong export_final_v2.zip
+D03.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.2, 4.7",Đã bổ sung box hand thứ hai bị thiếu ở D03.png trong export_final_v2.zip
+D03.png,face13,mouth_right.occluded,khác cờ,0,1,ambiguous,4.6,Giữ nguyên theo quan sát vị trí khóe miệng; đối chiếu thêm với peer
+D04.png,person,seatbelt,khác giá trị (IoU=0.87),worn_correct,unknown,ambiguous,4.7,Giữ worn_correct theo dải dây thấy được; trao đổi thêm với peer
+D04.png,phone,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.43,,peer,4.4-5,Đã thu gọn box phone sát mép hơn trong export_final_v2.zip
+D04.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.4-5,Đã thu gọn box phone sát mép hơn trong export_final_v2.zip
+D05.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.43,,mine,"4.4-5, 4.7",Giữ nguyên box hand vì ôm đủ từ đầu ngón đến cổ tay; báo peer chỉnh lại
+D05.png,face,gaze_zone,khác giá trị (IoU=0.75),cluster,road,ambiguous,4.5,Giữ cluster theo hướng mắt nhìn bảng đồng hồ; trao đổi thêm với peer
+D05.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.4-5, 4.7",Giữ nguyên box hand của mình vì bao đủ bàn tay hơn
+D06.png,person,seatbelt,khác giá trị (IoU=0.94),unknown,worn_incorrect,mine,"4.4-1, 4.7",Giữ unknown vì vùng áo tối không thấy rõ dây an toàn
+D06.png,face,gaze_zone,khác giá trị (IoU=0.79),lap,cluster,ambiguous,4.5,Giữ lap theo hướng nhìn xuống đùi; trao đổi thêm với peer
+D06.png,face13,count,khác số skeleton,1,0,mine,4.6,Giữ nguyên face13; báo peer bổ sung vì mặt rộng >= 60 px
+S01_ir.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ nguyên child_seat; trao đổi với peer về phân biệt child_seat và infant_seat
+S01_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ nguyên child_seat; góp ý peer kiểm tra lại loại ghế
+S02_ir.png,infant_seat,facing,khác giá trị (IoU=0.97),front,rear,peer,"4.1, 4.8",Đã sửa infant_seat.facing từ front sang rear trong export_final_v2.zip
+S02_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S02_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3-1,Giữ nguyên modality=rgb; báo peer sửa từ ir sang rgb
+S02_rgb.png,infant_seat,facing,khác giá trị (IoU=0.97),front,rear,peer,"4.1, 4.8",Đã sửa infant_seat.facing từ front sang rear trong export_final_v2.zip
+S02_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S03_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ nguyên infant_seat; góp ý peer không gán person cho ghế sơ sinh
+S03_ir.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ nguyên child_seat; góp ý peer không gán person cho ghế trẻ em
+S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ nguyên; báo peer sửa person thành child_seat/infant_seat
+S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ nguyên; báo peer sửa person thành child_seat/infant_seat
+S03_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ nguyên infant_seat; góp ý peer không gán person cho ghế sơ sinh
+S03_rgb.png,child_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,"4.1, 4.8",Giữ nguyên child_seat; góp ý peer không gán person cho ghế trẻ em
+S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ nguyên; báo peer sửa person thành child_seat/infant_seat
+S03_rgb.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8,Kiểm tra lại vật nhỏ trên ghế ở S03_rgb cùng peer
+S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.8",Giữ nguyên; báo peer sửa person thành child_seat/infant_seat
+S04_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S04_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S05_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S05_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S06_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S06_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S07_ir.png,object,type,khác giá trị (IoU=0.93),bag,other,mine,4.8,Giữ nguyên type=bag theo hình dạng túi quan sát được
+S07_rgb.png,object,type,khác giá trị (IoU=0.88),bag,other,mine,4.8,Giữ nguyên type=bag theo hình dạng túi quan sát được
+S08_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S08_rgb.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,Giữ nguyên box face; báo peer bổ sung vì OMS yêu cầu person kèm face
+S08_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.4-4, 4.8",Đã tăng Brightness/Contrast thấy rõ và bổ sung box child_seat trong export_final_v2.zip

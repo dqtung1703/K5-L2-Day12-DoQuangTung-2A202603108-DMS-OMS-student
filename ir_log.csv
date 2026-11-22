@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S08_ir,IR_sim,"Ảnh RGB cùng cảnh (S08_rgb) rất tối ở vùng ghế sau bên phải ảnh khiến lúc đầu không thấy child_seat, trong khi ảnh IR-sim sáng hơn và hiện rõ khung ghế",child_seat (box),"Phải tăng Brightness/Contrast trên CVAT cho S08_rgb mới nhìn rõ và bổ sung đủ box child_seat đồng bộ với S08_ir"
+S01_ir,IR_sim,"Ảnh IR-sim mất hoàn toàn thông tin màu sắc nên không phân biệt được chi tiết tối màu (áo tối, dây an toàn) bằng màu",seatbelt,"Giữ unknown hoặc not_worn theo quy tắc SVIRO, không đoán từ màu sắc hay từ ảnh RGB"
+S07_ir,IR_sim,"Đồ vật trên hàng ghế sau mất màu sắc và họa tiết so với S07_rgb, chỉ còn độ sáng xám và đường viền",object.type,"Phải phân loại bag dựa vào hình dạng tổng thể thay vì màu/chất liệu; nếu không chắc sẽ chuyển sang other"
+D02,real_IR,"Ánh sáng NIR thật đi qua tròng kính trong của tài xế làm mờ vùng khe mắt, không phân biệt chắc chắn mắt đang mở hay nhắm",eye_left / eye_right / face13,"Ghi eye_left và eye_right là unknown (không đoán open/closed) và gắn cờ outside/occluded cho các điểm mắt của face13"
+D04,real_IR,"Ảnh NIR thật không có màu và vùng cầm vật tối cục bộ nên khó phân biệt ranh giới điện thoại với bàn tay",phone (box),"Chỉ vẽ box phone khi nhận diện rõ cạnh/góc/màn hình và phải căn sát mép, không gán nhầm vật tối cầm tay khác"
+D06,real_IR,"Vùng thân áo tài xế trên ảnh NIR thật bị tối và thiếu tương phản nên không nhìn rõ dải dây an toàn vắt qua vai",seatbelt,"Ghi unknown theo luật 4.4-1, không đoán worn_correct hay worn_incorrect"
